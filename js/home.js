@@ -10,16 +10,16 @@ fetch(url)
 .then(function(data) {
   console.log(data);
   let characters = "";
-  for (let i = 0; i < data.results.length; i++){ // da error algo del length
-    results +=    
-
-    `<article>
-    <img src=${data.results[i].image} alt="imagen">
-    <h2>${data.results[i].name}</h2>
-    <p>Nivel de dificultad: ${data.results[i].difficulty} </p>
-    <p> <a href="./detalle_receta.html?id=${data.results[i].id}">Detalle</a></p>
-    </article>`
-
+  section_main.innerHTML = characters;
+  for (let i = 0; i < 10; i++){ 
+    characters=
+    `<article class="art_receta">
+    <img src=${data.recipes[i].image} alt="imagen" class="img_receta">
+    <h2>${data.recipes[i].name}</h2>
+    <p>Nivel de dificultad: ${data.recipes[i].difficulty} </p>
+    <p> <a href="./detalle_receta.html?id=${data.recipes[i].id}">Detalle</a></p>
+    </article>`;
+    section_main.innerHTML += characters;
   };
 
 })
@@ -27,3 +27,5 @@ fetch(url)
   console.log("Error: " + error);
 })
 
+
+ 
