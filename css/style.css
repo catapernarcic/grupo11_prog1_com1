@@ -70,14 +70,26 @@ footer{
 .cajah1{
     display: flex;
     align-self: flex-end;
+    align-items: center;
 }
 .cajah2{
     display: flex;
-    align-self: flex-start;
+    align-self: flex-end;
 }
 .navegador{
     align-self: center;
     margin-top: 20px;
+}
+.load-more{
+    background-color: #D8C2B5;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px; 
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 45%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 @media(max-width: 420px){
