@@ -33,7 +33,7 @@ fetch(url)
 
     if (data.tags && data.tags.length > 0) {
       for (let tag of data.tags) {
-        recipeDetails += `<li><a href="./categoria.html?tag=${tag}">${tag}</a></li>`;
+        recipeDetails += `<li><a href="./categorias.html?tag=${tag}">${tag}</a></li>`;
       }
     } else {
       recipeDetails += `<li>No hay etiquetas disponibles</li>`;
