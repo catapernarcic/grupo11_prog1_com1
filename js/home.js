@@ -17,7 +17,7 @@ fetch(url)
     <img src=${data.recipes[i].image} alt="imagen" class="img_receta">
     <h2>${data.recipes[i].name}</h2>
     <p>Nivel de dificultad: ${data.recipes[i].difficulty} </p>
-    <p> <a href="./detalle_receta.html?id=${data.recipes[i].id}">Detalle</a></p>
+    <p class="data-recipie"> <a href="./detalle_receta.html?id=${data.recipes[i].id}">Detalle</a></p>
     </article>`;
     section_main.innerHTML += characters;
   };

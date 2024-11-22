@@ -36,6 +36,10 @@ header{
     background-color: #b3baa3 ;
     
 }
+.data-recipie :hover{
+    font-weight: bold;
+    color: #7a826a;
+}
 .section_main{
     display: flex;
     justify-content: space-between;
