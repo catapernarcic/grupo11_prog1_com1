@@ -8,26 +8,53 @@
 </head>
 <body>
     <header>
-        <img src="" alt="" class="logo">
-        <form action="" method="GET">
-            <input type="text" name="q" placeholder="Escriba aqui...">
-            <button type="submit"> SEARCH</button>
+        <section class="section_header">
+            <div class="caja1">
+                <div class="cajah1">
+                    <img src="./img/img_logo_tp.jpg" alt="logo" class="logo">
+                </div>
+                <div class="cajah2">
+                    <form action="" method="GET">
+                    <input type="text" name="q" placeholder="Escriba aqui...">
+                    <button type="submit"> SEARCH</button>
+                    </form>
+                </div>
 
-        </form>
-        <nav>
-            <ul>
-                <li class="navh"><a href="./home.html">home</a></li>
-                <li class="navh"><a href="./categorias.html">categoria</a></li>
-                <li class="navh"><a href="./login.html">login</a></li>
-                <li class="navh"><a href="./registro.html">registro</a></li>
-            </ul>
-        </nav>
+            
+            </div>
+            <div class="caja2">
+            <nav class="navegador">
+                <ul class="ul_navegador">
+                    <li class="navh"><a href="./home.html">home</a></li>
+                    <li class="navh"><a href="./categorias.html">categoria</a></li>
+                    <li class="navh"><a href="./login.html">login</a></li>
+                    <li class="navh"><a href="./registro.html">registro</a></li>
+                 </ul>
+            </nav>
+            </div>
+        </section>
     </header>
-    <main>
+    <main class="main_login">
+        
+        <section class="section_form">
+            
+            <form action=""> 
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" class="email">
+                <div class="invalid-feedback email"></div>
 
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" class="email">
+                <div class="invalid-feedback password"></div>
+                <button type="submit" class="boton_enviar">ENVIAR</button>
+                <button><a href="./registro.html">Registrarme</a></button>
+            </form>
+        
+        </section>
     </main>
     <footer>
-    <p>Agudo, Pernarcic y Lagos Marmol</p>
+    <p class="pf">Agudo, Pernarcic y Lagos Marmol</p>
     </footer>
+    <script src="./js/login.js"></script>
 </body>
 </html>
