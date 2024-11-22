@@ -92,9 +92,8 @@ footer{
     padding: 12px 24px; 
     font-weight: bold;
     font-size: 14px;
-    margin-left: 45%;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin: 10px;
+
 }
 .section_detaller{
     display: flex;
@@ -171,6 +170,14 @@ footer{
     border: 2px rgb(129, 122, 122) solid;
     border-radius: 30px;
 }
+.main_home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
 @media(max-width: 420px){
     body{
         width: 420px;
