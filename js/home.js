@@ -1,8 +1,10 @@
 let section_main = document.querySelector(".section_main")
 let url = 'https:/dummyjson.com/recipes'
+let numero = 10
 
 console.log(section_main)
-
+cargar_mas();
+function cargar_mas(){
 fetch(url)
 .then(function(response) {
   return response.json()
@@ -11,7 +13,7 @@ fetch(url)
   console.log(data);
   let characters = "";
   section_main.innerHTML = characters;
-  for (let i = 0; i < 10; i++){ 
+  for (let i = 0; i < numero; i++){ 
     characters=
     `<article class="art_receta">
     <img src=${data.recipes[i].image} alt="imagen" class="img_receta">
@@ -26,6 +28,12 @@ fetch(url)
 .catch(function(error) {
   console.log("Error: " + error);
 })
+}
 
+let boton = document.querySelector(".load-more");
+boton.addEventListener("click", function () {
+  numero += 10;
+  cargar_mas();
+});
 
  
