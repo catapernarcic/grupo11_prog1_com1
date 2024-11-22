@@ -92,6 +92,20 @@ footer{
     margin-top: 2%;
 }
 
+.main_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+}
+.section_form{
+    background-color: #aeafb1;
+    padding: 50px;
+    width: 300px;
+    height: 200px;
+    border: 2px rgb(129, 122, 122) solid;
+    border-radius: 30px;
+}
 @media(max-width: 420px){
     body{
         width: 420px;
