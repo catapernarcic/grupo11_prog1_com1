@@ -6,7 +6,7 @@
     <title>Register</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="bodyreg">
     <header>
         <img src="" alt="" class="logo">
         <form action="" method="GET">
@@ -23,6 +23,31 @@
             </ul>
         </nav>
     </header>
+    <div class="form-container">
+        <form id="registerForm">
+          <h2 class="h2reg">Registro</h2>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <p class="error-message" id="emailError"></p>
+          
+         
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+          <p class="error-message" id="passwordError"></p>
+          
+         
+          <div class="checkbox-container">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Términos y condiciones</label>
+          </div>
+          
+          <button class="buttreg" type="submit">Registrar</button>
+
+          <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </form>
+    </div>
+    <script src="js/registro.js"></script>
     <main>
 
     </main>
