@@ -8,13 +8,18 @@ fetch(url)
     })
     .then(function(data) {
         console.log(data); 
-        if (Array.isArray(data)) {
+
+        
+        if (data && data.length > 0) {
             let categoriesHTML = "<ul>";
             
+           
             for (let category of data) {
                 categoriesHTML += `<li><a href="./detalle_categoria.html?category=${category}">${category}</a></li>`;
             }
             categoriesHTML += "</ul>";
+
+            
             categoriasht.innerHTML = categoriesHTML;  
         } 
     })
