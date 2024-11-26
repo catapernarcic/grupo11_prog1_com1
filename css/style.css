@@ -77,7 +77,7 @@ header{
     height: 200px;
 }
 body{
-    background-color: #EADFD8;
+    background-color: #e4ddd9;
 }
 a{
     color: black;
@@ -321,28 +321,33 @@ button:hover {
 
 .detalle_categories {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 10px;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: stretch;
+    padding: 20px;
 }
 .detll_cate{
-    flex-direction: row;
-    width: 50%;
-    margin: 40px;
+    display: flex;
+    flex-direction: column; 
+    max-width: 400px; 
+    margin: 10px; 
     background-color: #D8C2B5;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 8px;
    
 }
 .h1_detalle{
     text-align: center;
 }
+
 .img_detalle{
-    height: 400px;
-    margin-left: 50px;
     margin-bottom: 15px;
     margin-top: 15px;
+    width: 80%; 
+    height: 300px;  
+    border-radius: 8px; 
+    margin-left: 38px;
 }
 .detall_cate p{
     margin-top: 15px;
@@ -386,4 +391,8 @@ button:hover {
     .caja2{
         align-self: center;
     }
+    .detll_cate {
+        flex-basis: 100%; 
+        max-width: none;
     }
+}
