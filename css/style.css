@@ -3,6 +3,12 @@
     padding: 0px;
     margin: 0px;
 }
+body {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+    justify-content: space-between;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -49,9 +55,18 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.art_receta{
+.search-results{
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.art_receta{
+    display: flex;
+    flex-direction: column;
     width: 15%;
     margin: 15px;
     background-color: #D8C2B5;
@@ -75,10 +90,15 @@ footer{
 }
 .pf{
     text-align: center;
+
 }
 .section_header{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+}
+.caja1{
+    display: flex;
     flex-direction: row;
 }
 .cajah1{
@@ -88,7 +108,8 @@ footer{
 }
 .cajah2{
     display: flex;
-    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 .navegador{
     align-self: center;
@@ -102,7 +123,16 @@ footer{
     font-weight: bold;
     font-size: 14px;
     margin: 10px;
-
+    
+}
+.boton_search{
+    background-color: #b49b8d;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px; 
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px;
 }
 .section_detaller{
     display: flex;
@@ -118,6 +148,8 @@ footer{
     max-width: 50%; 
     height: auto; 
     border-radius: 10px;
+    align-self: center;
+    
 }
 .art_detalle {
     background-color: #fff6f4;
@@ -125,6 +157,9 @@ footer{
     border-radius: 8px;
     width: 100%;
     max-width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .recipe-title {
@@ -133,16 +168,22 @@ footer{
     text-align: center;
 }
 
-.recipe-image {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    margin-left: 20%;
-    margin-top: 5%;
+.main_d_cat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.ulp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main_resultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .recipe-cooking-time,
 .recipe-instructions {
     font-size: 14px;
@@ -173,7 +214,9 @@ footer{
 }
 .section_form{
     background-color: #aeafb1;
-    padding: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
     width: 300px;
     height: 200px;
     border: 2px rgb(129, 122, 122) solid;
@@ -194,7 +237,11 @@ footer{
   align-items: center;
 }
 
-
+.main_registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .h2reg {
     margin-bottom: 20px;
 }

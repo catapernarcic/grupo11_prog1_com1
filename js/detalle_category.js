@@ -14,7 +14,7 @@ if (category) {
 
             
             if (data.recipes && data.recipes.length > 0) {
-                let recipesHTML = "<ul>";
+                let recipesHTML = `<ul class="ulp">`;
                 
                 for (let recipe of data.recipes) {
                     recipesHTML += `<article class="detll_cate">
@@ -26,7 +26,7 @@ if (category) {
                         <p><strong>Cantidad de porciones:</strong> ${recipe.servings}</p>
                     </article>`;
                 }
-                recipesHTML += "</ul>";
+                recipesHTML += `</ul>`;
                 detalle_categories.innerHTML = recipesHTML;  
             } else {
                 detalle_categories.innerHTML = "<p>No se encontraron recetas para esta categoría.</p>";
