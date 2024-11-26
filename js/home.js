@@ -19,7 +19,7 @@ fetch(url)
     <img src=${data.recipes[i].image} alt="imagen" class="img_receta">
     <h2>${data.recipes[i].name}</h2>
     <p>Nivel de dificultad: ${data.recipes[i].difficulty} </p>
-    <p class="data-recipie"> <a href="./detalle_receta.html?id=${data.recipes[i].id}">Ir a detalle</a></p>
+    <p class="data-recipie"> <a class="data-recipiea" href="./detalle_receta.html?id=${data.recipes[i].id}">Ir a detalle</a></p>
     </article>`;
     section_main.innerHTML += characters;
   };
@@ -51,7 +51,7 @@ fetch(url)
                               <img class="img_receta" src="${recipe.image}" alt="${recipe.name}">
                               <h3>${recipe.name}</h3>
                               <p>Dificultad: ${recipe.difficulty}</p>
-                              <a class="data-recipie" href="detalle_receta.html?id=${recipe.id}">Ir a detalle</a>
+                              <p class="data-recipie"><a  href="detalle_receta.html?id=${recipe.id}">Ir a detalle</a> </p>
                           </article>
                       `;
                   });

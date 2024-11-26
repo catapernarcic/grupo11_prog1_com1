@@ -33,18 +33,23 @@ header{
     list-style: none;
     padding: 10px;
     border-radius: 5px;
-    background-color: #b3baa3 ;
+    background-color: #b3baa3;
     
+}
+.data-recipiea{
+    font-weight: bold;
+    color: #8f9878;
 }
 .data-recipie :hover{
     font-weight: bold;
-    color: #7a826a;
+    color: #87898d;
 }
 .section_main{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .art_receta{
     flex-direction: row;
     width: 15%;
@@ -254,6 +259,7 @@ button:hover {
     text-align: center;
     max-width: 200px;
     flex-direction: column;
+    list-style: none;
 }
 
 .categoriasht li:hover {
@@ -272,6 +278,27 @@ button:hover {
     gap: 20px;
     justify-content: center;
     padding: 10px;
+}
+.detll_cate{
+    flex-direction: row;
+    width: 50%;
+    margin: 40px;
+    background-color: #D8C2B5;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+.h1_detalle{
+    text-align: center;
+}
+.img_detalle{
+    height: 400px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.detall_cate p{
+    margin-top: 15px;
 }
 
 

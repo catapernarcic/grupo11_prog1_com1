@@ -17,14 +17,14 @@ if (category) {
                 let recipesHTML = "<ul>";
                 
                 for (let recipe of data.recipes) {
-                    recipesHTML += `<li>
-                        <h2>${recipe.name}</h2>
-                        <img src="${recipe.image}" alt="${recipe.name}">
-                        <p>Ingredientes: ${recipe.ingredients.join(", ")}</p>
+                    recipesHTML += `<article class="detll_cate">
+                        <h2 class="h1_detalle">${recipe.name}</h2>
+                        <img class="img_detalle" src="${recipe.image}" alt="${recipe.name}">
+                        <p><strong>Ingredientes:</strong> ${recipe.ingredients.join(", ")}</p>
                         <p><strong>Dificultad:</strong> ${recipe.difficulty}</p>
                         <p><strong>Tiempo de cocción:</strong> ${recipe.cookTimeMinutes} minutos</p>
                         <p><strong>Cantidad de porciones:</strong> ${recipe.servings}</p>
-                    </li>`;
+                    </article>`;
                 }
                 recipesHTML += "</ul>";
                 detalle_categories.innerHTML = recipesHTML;  
