@@ -10,11 +10,13 @@ header{
     padding: 10px 20px; 
     background-color: #D8C2B5; 
 }
+
 .logo{
     margin-left: 30px;
     margin-right: 30px;
     height: 80px;
     border-radius: 50px;
+    margin-bottom: 8px;
 }
 
 .ul_navegador{
@@ -31,8 +33,12 @@ header{
     list-style: none;
     padding: 10px;
     border-radius: 5px;
-    background-color: #C0C4B6 ;
+    background-color: #b3baa3 ;
     
+}
+.data-recipie :hover{
+    font-weight: bold;
+    color: #7a826a;
 }
 .section_main{
     display: flex;
@@ -90,18 +96,17 @@ footer{
     padding: 12px 24px; 
     font-weight: bold;
     font-size: 14px;
-    margin-left: 45%;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin: 10px;
+
 }
 .section_detaller{
     display: flex;
     flex-direction: column; 
     align-items: center;
-    gap: 20px; 
+    gap: 10px; 
     margin: 140px; 
     width: 80%; 
-    padding: 20px;
+    padding: 5px;
     
 }
 .recipe-image {
@@ -119,7 +124,7 @@ footer{
 
 .recipe-title {
     font-size: 20px;
-    color: #333;
+    color: #4a4646;
     text-align: center;
 }
 
@@ -171,14 +176,19 @@ footer{
 }
 
 .form-container{
-  background: #ffffff;
+  background:#aeafb1;
   padding: 20px 30px;
+  border: 2px rgb(129, 122, 122) solid;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .h2reg {
     margin-bottom: 20px;
