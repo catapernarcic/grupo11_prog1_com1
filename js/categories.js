@@ -15,7 +15,7 @@ fetch(url)
             
            
             for (let category of data) {
-                categoriesHTML += `<li><a href="./detalle_categoria.html?category=${category}">${category}</a></li>`;
+                categoriesHTML += `<li class="listacat" ><a class="categA" href="./detalle_categoria.html?category=${category}">${category} /</a></li>`;
             }
             categoriesHTML += "</ul>";
 

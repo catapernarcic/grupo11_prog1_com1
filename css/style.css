@@ -351,33 +351,31 @@ button:hover {
     margin: 0;
     height: 14px;
 }
-
+.categoriasht{
+    height: 600px;
+}
 .categoriasht ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: row;
+    gap: 55px;
     justify-content: center;
     padding: 10px;
-}
-
-.categoriasht li {
-    background-color: #fff6f4;
-    padding: 15px 20px;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 200px;
-    flex-direction: column;
     list-style: none;
+    align-items: center;
+    margin: 5%;
 }
 
 .categoriasht li:hover {
-    color: #b3baa3;
+    color: #6c6154;
+    font-weight: bold;
 }
 
-.categoriasht a {
+.categA{
     color: #333;
-    display: block;
-    text-align: center;
+}
+.categA:hover{
+    color: #6c6154;
 }
 
 .detalle_categories {
@@ -386,7 +384,7 @@ button:hover {
     gap: 20px; 
     justify-content: center; 
     align-items: stretch;
-    padding: 20px;
+    flex-direction: row;
 }
 .detll_cate{
     display: flex;
