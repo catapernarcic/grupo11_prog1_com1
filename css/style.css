@@ -401,6 +401,12 @@ button:hover {
         margin: 10px auto; 
     }
 
+    .img_receta{
+        width: 100%;
+        border-radius: 10px; 
+        margin-bottom: 10px;
+    }
+
     .ul_navegador {
         display: flex;
         flex-direction: column;
