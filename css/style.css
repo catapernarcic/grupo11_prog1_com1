@@ -382,46 +382,51 @@ button:hover {
     margin-top: 15px;
 }
 
-
-@media(max-width: 420px){
-    body{
-        width: 420px;
+@media (max-width: 420px) {
+    body {
+        max-width: 100%; 
+        margin: 0;
+        padding: 0;
     }
-    .art_receta{
+
+    .art_receta {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        align-self: center;
-        
+        width: 80%; 
+        max-width: 300px;
+        align-self: center; 
+        text-align: center; 
+        margin: 10px auto; 
     }
-    .ul_navegador{
+
+    .ul_navegador {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
-        margin: 0;
+        gap: 10px; 
         list-style: none;
-     
+        margin: 0;
+        padding: 0;
     }
-    .section_header{
+
+    .section_header {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    header{
-        height: auto;
-    }
-    .navh{
+
+    .navh {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .caja1{
+
+    .caja1, .caja2 {
         align-self: center;
     }
-    .caja2{
-        align-self: center;
-    }
+
     .detll_cate {
-        flex-basis: 100%; 
+        flex-basis: 100%;
         max-width: none;
+        text-align: center;
     }
 }
