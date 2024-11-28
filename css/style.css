@@ -67,6 +67,7 @@ header{
 .art_receta{
     display: flex;
     flex-direction: column;
+    height: 325px;
     width: 15%;
     margin: 15px;
     background-color: #D8C2B5;
@@ -204,6 +205,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .recipe-cooking-time,
 .recipe-instructions {
