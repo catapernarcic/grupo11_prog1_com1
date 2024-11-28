@@ -134,6 +134,25 @@ footer{
     font-size: 14px;
     margin: 10px;
 }
+.boton_enviar{
+    background-color: #b49b8d;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px; 
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px;
+}
+.boton_registrarse{
+    background-color: #b49b8d;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px; 
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px;
+}
+
 .section_detaller{
     display: flex;
     flex-direction: column; 
@@ -167,7 +186,9 @@ footer{
     color: #4a4646;
     text-align: center;
 }
-
+.cargarmas{
+    margin-bottom:20px;
+}
 .main_d_cat{
     display: flex;
     align-items: center;
@@ -215,10 +236,12 @@ footer{
 .section_form{
     background-color: #aeafb1;
    display: flex;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
     width: 300px;
-    height: 200px;
+    height: auto;
+    padding: 10px;
     border: 2px rgb(129, 122, 122) solid;
     border-radius: 30px;
 }
@@ -239,6 +262,12 @@ footer{
 
 .main_registro{
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_home{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }

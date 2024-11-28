@@ -1,24 +1,29 @@
-let email = document.querySelector("#email")
-let password = document.querySelector("#password")
+let email = document.querySelector("#email");
+let password = document.querySelector("#password");
+let formulario = document.querySelector("#form_login");
+let erroremail = document.querySelector(".email2");
+let errorpassw = document.querySelector(".password2");
 
-let erroremail = document.querySelector(".email")
-let errorpassw = document.querySelector(".password")
+formulario.addEventListener("submit", function (event) {
+    event.preventDefault(); 
 
-contact_form.addEventListener('submit', function(event){
-    let validar = true
-    event.preventDeafult();
-    if(email.value == ""){
-        erroremail.style.display = "block"  
-        erroremail.innerText = "El campo esta vacio"   
-        let validar = false
+    let validar = true; 
+
+
+    if (email.value === "") {
+        erroremail.style.display = "block";
+        erroremail.innerText = "El campo está vacío";
+        validar = false;
+    } 
+
+
+    if (password.value === "") {
+        errorpassw.style.display = "block";
+        errorpassw.innerText = "El campo está vacío";
+        validar = false;
+    } 
+
+    if (validar) {
+        formulario.submit();
     }
-    if(password.value == ""){
-        errorpassw.style.display = "block" 
-        errorpassw.innerText = "El campo esta vacio" 
-        let validar = false    
-    }
-    if(validar){
-        form.submit()
-    }
-    
-})
+});
