@@ -313,8 +313,8 @@ label {
     margin: 10px 0 5px;
 }
       
-input[type="email"],
-input[type="password"] {
+#email,
+#password {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -432,7 +432,7 @@ button:hover {
         text-align: center; 
         margin: 10px auto; 
         height: auto;
-        background-color: #aeafb1;
+        background-color: #aaa294;
     }
 
     .img_receta{
@@ -446,10 +446,15 @@ button:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px; 
+        gap: 5px; 
         list-style: none;
         margin: 0;
         padding: 0;
+    }
+    .ul_navegador .navh a {
+        font-size: 15px;
+        padding: 8px 15px;
+        border-radius: 5px;
     }
 
     .section_header {
@@ -471,5 +476,48 @@ button:hover {
         flex-basis: 100%;
         max-width: none;
         text-align: center;
+    }
+    #titulo{
+        font-size: 30px;
+    }
+    .cont_navl{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0%;
+    }
+    .logo{
+        width: 50px; 
+        height: 50px;
+    }
+    .boton_texto {
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 10px;
+        width: 150px;
+    }
+    .boton_search {
+        padding: 3px 8px;
+        border-radius: 20px;
+    }
+    .load-more{
+        background-color: #aaa294;
+    }
+    .load-more:hover{
+        background-color: #8f9878;
+    }
+    .data-recipiea{
+        color: #fff6f4;
+        font-weight: lighter;
+    }
+    .categoriasht{
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+    }
+    .header{
+        height: fit-content;
     }
 }
