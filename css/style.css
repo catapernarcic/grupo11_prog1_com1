@@ -395,16 +395,17 @@ button:hover {
         display: flex;
         flex-direction: column;
         width: 80%; 
-        max-width: 300px;
-        align-self: center; 
+        max-width: 300px; 
         text-align: center; 
         margin: 10px auto; 
+        height: auto;
     }
 
     .img_receta{
         width: 100%;
         border-radius: 10px; 
         margin-bottom: 10px;
+        height: auto;
     }
 
     .ul_navegador {
