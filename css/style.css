@@ -432,6 +432,7 @@ button:hover {
         text-align: center; 
         margin: 10px auto; 
         height: auto;
+        background-color: #aeafb1;
     }
 
     .img_receta{
