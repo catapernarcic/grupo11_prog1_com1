@@ -13,20 +13,20 @@ form.addEventListener("submit", function (event) {
     let isValid = true;
   
       
-    if (email == "") {
+    if (email.value === "") {
       emailError.innerHTML = "Por favor complete el campo";
-      erroremail.style.display = "block";
+      emailError.style.display = "block";
       alert("El email está vacío");
       isValid = false;
     }
   
       
-    if (password == "") {
+    if (password.value === "") {
       passwordError.innerHTML = "Por favor complete el campo";
       errorpassw.style.display = "block";
       alert("La contraseña está vacía");
       isValid = false;
-    } 
+    }
   
      
     if (isValid) {
