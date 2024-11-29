@@ -263,7 +263,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 680px;
+    padding: 100px;
 }
 .section_form{
     background-color: #aeafb1;
@@ -296,6 +296,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 60px;
 }
 .main_home{
     display: flex;
@@ -353,6 +354,10 @@ button:hover {
 }
 .categoriasht{
     height: 600px;
+}
+.main_cat{
+    padding: 20px;
+    margin: 10px;
 }
 .categoriasht ul {
     display: flex;
