@@ -30,12 +30,13 @@ fetch(url)
 })
 }
 
+
+
   let boton = document.querySelector("#cargar");
   let section = document.querySelector(".section_main");
-  let pagina = 0; 
+  let pagina = 10; 
 
   boton.addEventListener("click", function () {
-      pagina += 10;
       console.log("Cargando recetas desde la página:", pagina);
       fetch(`https://dummyjson.com/recipes?limit=10&skip=${pagina}`)
       .then(function(response) {
@@ -44,24 +45,20 @@ fetch(url)
       .then(function(data) {
               
               console.log(data); 
-              if (data.recipes && data.recipes.length > 0) {
-                  data.recipes.forEach(recipe => {
-                      section.innerHTML += `
-                          <article class="art_receta">
-                              <img class="img_receta" src="${recipe.image}" alt="${recipe.name}">
-                              <h3>${recipe.name}</h3>
-                              <p>Dificultad: ${recipe.difficulty}</p>
-                              <p class="data-recipie"><a  href="detalle_receta.html?id=${recipe.id}">Ir a detalle</a> </p>
-                          </article>
-                      `;
-                  });
+              for (let i = 0; i < data.recipes.length; i++) {
+                let recipe = data.recipes[i];
+                section.innerHTML += `
+                <article class="art_receta">
+                    <img class="img_receta" src="${recipe.image}" alt="${recipe.name}">
+                    <h3>${recipe.name}</h3>
+                    <p>Dificultad: ${recipe.difficulty}</p>
+                    <p class="data-recipie"><a  href="detalle_receta.html?id=${recipe.id}">Ir a detalle</a> </p>
+                </article>
+                `;
                   pagina += 10;
-              } else {
-                console.log("No hay más recetas para cargar.");
-                boton.style.display = "none";
-            }
+              }
           })
           .catch(error => {
               console.error("Error al cargar recetas:", error);
           });
-  });
+        });

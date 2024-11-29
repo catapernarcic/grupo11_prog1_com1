@@ -20,7 +20,7 @@ if (category) {
                     recipesHTML += `<article class="detll_cate">
                         <h2 class="h1_detalle">${recipe.name}</h2>
                         <img class="img_detalle" src="${recipe.image}" alt="${recipe.name}">
-                        <p><strong>Ingredientes:</strong> ${recipe.ingredients.join(", ")}</p>
+                        <p><strong>Ingredientes:</strong> ${recipe.ingredients} </p>
                         <p><strong>Dificultad:</strong> ${recipe.difficulty}</p>
                         <p><strong>Tiempo de cocción:</strong> ${recipe.cookTimeMinutes} minutos</p>
                         <p><strong>Cantidad de porciones:</strong> ${recipe.servings}</p>
