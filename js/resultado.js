@@ -19,6 +19,8 @@ fetch(url)
 .then(function(data) {
     console.log(data);
     
+
+
     if (data.recipes.length == 0){
       resultado_b.innerHTML = `No se encontraron resultados para: ${q}`
     }
@@ -46,3 +48,5 @@ fetch(url)
 .catch(function(error) {
     console.log("Error: " + error);
   })
+
+
