@@ -4,6 +4,7 @@ const category = queryParams.get("category");
 
 if (category) {
     let url = `https://dummyjson.com/recipes/tag/${category}`; 
+console.log(category);
 
     fetch(url)
         .then(function(response) {

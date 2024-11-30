@@ -59,10 +59,7 @@ fetch(url)
   let pagina = 10; 
 
   boton.addEventListener("click", function () {
-    if (pagina >= 30) {
-      console.log("Se han cargado todas las recetas disponibles.");
-      return;
-  }
+   
       console.log("Cargando recetas desde la página:", pagina);
       fetch(`https://dummyjson.com/recipes?limit=10&skip=${pagina}`)
       .then(function(response) {
