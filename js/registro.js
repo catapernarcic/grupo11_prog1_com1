@@ -16,15 +16,15 @@ form.addEventListener("submit", function (event) {
     if (email.value === "") {
       emailError.innerHTML = "Por favor complete el campo";
       emailError.style.display = "block";
-      alert("El email está vacío");
-      isValid = false;
+      
+      isValid = false;
     }
   
       
     if (password.value === "") {
       passwordError.innerHTML = "Por favor complete el campo";
       errorpassw.style.display = "block";
-      alert("La contraseña está vacía");
+      
       isValid = false;
     }
   
