@@ -60,7 +60,7 @@ fetch(url)
 
   boton.addEventListener("click", function () {
    
-      console.log("Cargando recetas desde la página:", pagina);
+      console.log( pagina);
       fetch(`https://dummyjson.com/recipes?limit=10&skip=${pagina}`)
       .then(function(response) {
         return response.json()
